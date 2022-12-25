@@ -39,12 +39,12 @@ using namespace std;
 //}
 
 //problem 21
-int *square(int *a){
-    for(int i = 0; i < 5; i++){
-        *(a+i) = *(a+i) * *(a+i);
-    }
-    return a;
-}
+// int *square(int *a){
+//     for(int i = 0; i < 5; i++){
+//         *(a+i) = *(a+i) * *(a+i);
+//     }
+//     return a;
+// }
 
 
 int main(){
@@ -306,35 +306,35 @@ int main(){
 //        cout << vec[x] << " ";
 //    }
     
-    vector<int> myVec;
-    int val, size;
-    cin >> size;
+//     vector<int> myVec;
+//     int val, size;
+//     cin >> size;
     
-    for(int i = 0; i < size; i++){
-        cin >> val;
-        myVec.push_back(val);
-    }
+//     for(int i = 0; i < size; i++){
+//         cin >> val;
+//         myVec.push_back(val);
+//     }
     
-    for(int a = 0; a < size; a++){
-        if(myVec[a] <= 0){
-            myVec.erase(myVec.begin()+a);
-        }
+//     for(int a = 0; a < size; a++){
+//         if(myVec[a] <= 0){
+//             myVec.erase(myVec.begin()+a);
+//         }
       
-    }
+//     }
     
-    for(int i = 0; i < size; i++){
-        for(int j = i+1; j < size; j++){
-            if(myVec[i] > myVec[j]){
-                int temp = myVec[i];
-                myVec[i] = myVec[j];
-                myVec[j] = temp;
-            }
-        }
-    }
+//     for(int i = 0; i < size; i++){
+//         for(int j = i+1; j < size; j++){
+//             if(myVec[i] > myVec[j]){
+//                 int temp = myVec[i];
+//                 myVec[i] = myVec[j];
+//                 myVec[j] = temp;
+//             }
+//         }
+//     }
     
-    for(int elem : myVec){
-        cout << elem << " ";
-    }
+//     for(int elem : myVec){
+//         cout << elem << " ";
+//     }
     
     
     
